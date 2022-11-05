@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -14,10 +13,18 @@ int main()
     cout << "Podaj liczbê y:" << endl;
     cin >> y;
 
-    cout << x << " + " << y << " = " << x + y << endl;
-    cout << x << " - " << y << " = " << x - y << endl;
-    cout << x << " * " << y << " = " << x * y << endl;
-    cout << x << " / " << y << " = " << x / y << endl;
+    cout << x << " + " << y << " = ";
+    printf("%.2f", x + y);
+    cout << endl;
+    cout << x << " - " << y << " = ";
+    printf("%.2f", x - y);
+    cout << endl;
+    cout << x << " * " << y << " = ";
+    printf("%.2f", x * y);
+    cout << endl;
+    cout << x << " / " << y << " = ";
+    printf("%.2f", x / y);
+    cout << endl;
 
     return 0;
 }
