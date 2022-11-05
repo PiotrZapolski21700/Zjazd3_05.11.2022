@@ -1,16 +1,23 @@
+
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    while (true)
-    {
-        if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.t)
-        {
-            break;
-        }
+    float x;
+    float y;
 
-        cout << Console.ReadKey(true).Key;
-    }
+    cout << "Podaj liczbê x:" << endl;
+    cin >> x;
+
+    cout << "Podaj liczbê y:" << endl;
+    cin >> y;
+
+    cout << x << " + " << y << " = " << x + y << endl;
+    cout << x << " - " << y << " = " << x - y << endl;
+    cout << x << " * " << y << " = " << x * y << endl;
+    cout << x << " / " << y << " = " << x / y << endl;
+
+    return 0;
 }
